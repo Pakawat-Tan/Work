@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>รายละเอียดผลิตภัณฑ์</title>
+
+      <!-- Font awesome CDN-->
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.css"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/content.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+  <body>
+    <img src="./img/background/gears.jpg" alt="" class="background" />
+
+    <header>
+      <nav>
+        <div class="logo">
+          <a onclick="navigateToIndex('page1')">
+            <img src="./img/Logo.png" alt="" class="logo-icon" />
+          </a>
+        </div>
+        <ul class="navlink">
+          <li class="nav-item ">
+            <a onclick="navigateToIndex('page1')">หน้าแรก</a>
+          </li>
+          <li class="nav-item">
+            <a onclick="navigateToIndex('page2')">เกี่ยวกับเรา</a>
+          </li>
+          <li class="nav-item active">
+            <a onclick="navigateToIndex('page3')">ผลิตภัณฑ์</a>
+          </li>
+          <li class="nav-item">
+            <a onclick="navigateToIndex('page4')">ติดต่อ</a>
+          </li>
+        </ul>
+        <div class="toggle-btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="active">
+      <article>
+        <div class="container-product-list">
+          <h1>รายละเอียดผลิตภัณฑ์</h1>
+          <div class="card-container-product-list">
+            <div class="card-list" id="product-list-data">
+
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <h3>ติดต่อเรา</h3>
+          <p>
+            ที่ตั้ง : 48/7 ถนน นนครไชยศรี แขวงถนนนครไชยศรี เขตดุสิต จังหวัด
+            กรุงเทพมหานคร 10300
+          </p>
+          <p>อีเมล : auts833@gmail.com</p>
+          <p>โทร : 081-692-6298</p>
+          <p>Line ID : sales_a.us</p>
+        </div>
+        <div class="footer-content footer-container-mid">
+          <h3>เวลาทำการ</h3>
+          <p>จันทร์ - ศุกร์</p>
+          <p>เวลาเปิด : 08:00</p>
+          <p>เวลาปิด : 17:00</p>
+        </div>
+        <div class="footer-content">
+          <div class="line-img">
+            <img src="./img/ID Line A.US.jpg" alt="" srcset="" />
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>บริษัท อัฑฒ์ เอ็นจิเนียริ่ง แอนด์ ซัพพลาย จำกัด &copy; 2024</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<!-- Jquery CDN -->
+<script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+
+<script src="./js/navbar.js"></script>
+<script src="./js/fetchdata.js"></script>

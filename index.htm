@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./img/Logo.ico" />
+    <title>Document</title>
+
+    <!-- Font awesome CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.css"
+    />
+
+    <!-- CSS Link style -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/imgsilde.css" />
+    <link rel="stylesheet" href="./css/content.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+  <body>
+    <img src="./img/background/gears.jpg" alt="" class="background" />
+    
+    <header>
+      <nav>
+        <div class="logo">
+          <a onclick="showPage('page1', this)"">
+            <img src="./img/Logo.png" alt="" class="logo-icon" />
+          </a>
+        </div>
+        <ul class="navlink">
+          <li class="nav-item active">
+            <a onclick="showPage('page1', this)">หน้าแรก</a>
+          </li>
+          <li class="nav-item">
+            <a onclick="showPage('page2', this)">เกี่ยวกับเรา</a>
+          </li>
+          <li class="nav-item">
+            <a onclick="showPage('page3', this)">ผลิตภัณฑ์</a>
+          </li>
+          <li class="nav-item">
+            <a onclick="showPage('page4', this)">ติดต่อ</a>
+          </li>
+        </ul>
+        <div class="toggle-btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Homepage -->
+    <main id="page1" class="page active">
+      <article>
+        <div class="imgslide">
+          <div class="content" id="swiper-wrapper"></div>
+          <div class="carousel-dot" id="carousel-dot"></div>
+        </div>
+      </article>
+
+      <article>
+        <div class="content-main">
+          <div class="container">
+            <div class="text-content">
+              <div class="text-style">
+                <h2>บริษัท อัฑฒ์ เอ็นจิเนียริ่ง แอนด์ ซัพพลาย จำกัด</h2>
+                <p>
+                  บริษัท อัฑฒ์ เอ็นจิเนียริ่ง แอนด์ ซัพพลาย จำกัด
+                  เชี่ยวชาญในการผลิตและจำหน่ายชิ้นส่วนอะไหล่เครื่องจักรกลทุกชนิด
+                  ด้วยเครื่องจักรทันสมัยที่มีความแม่นยำ
+                  รวมถึงบริการเทคนิคและคำปรึกษาที่ใส่ใจในความต้องการของลูกค้า
+                </p>
+              </div>
+            </div>
+            <div class="image-content">
+              <img
+                src="./img/LINE_ALBUM_งานติดตั้ง(งานเครน)_240709_1.jpg"
+                alt="Company Image"
+              />
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <div class="header-name">
+          <h2>บริการจากเรา</h2>
+        </div>
+        <section id="gallery">
+          <div class="img-card active">
+            <img src="./img/card/01.jpg" />
+            <label>
+              ติดตั้งเครน
+              <span
+                >การบริการการติดตั้งเครนเน้นความเชี่ยวชาญในการจัดการพื้นที่และการติดตั้งเครนอย่างมีประสิทธิภาพ
+                เพื่อให้ลูกค้าได้รับบริการที่มั่นใจ&nbsp;&nbsp;และปลอดภัย</span
+              >
+            </label>
+          </div>
+          <div class="img-card">
+            <img src="./img/card/02.jpg" />
+            <label>
+              ติดตั้งฉนวน
+              <span
+                >การบริการติดตั้งฉนวนเน้นความเชี่ยวชาญในการเลือกใช้วัสดุและกระบวนการที่เหมาะสม
+                เพื่อป้องกันการสูญเสียพลังงานและลดค่าใช้จ่ายในการควบคุมอุณหภูมิอาคารอย่างมีประสิทธิภาพ</span
+              >
+            </label>
+          </div>
+          <div class="img-card">
+            <img src="./img/card/03.jpg" />
+            <label>
+              งานกลึง
+              <span
+                >การบริการกลึงเน้นความเชี่ยวชาญในการใช้เครื่องมือและเทคโนโลยีที่ทันสมัย
+                เพื่อผลิตชิ้นงานที่มีคุณภาพและความแม่นยำสูง<br />
+                ให้ลูกค้าได้รับผลลัพธ์ที่ตรงตามความต้องการ</span
+              >
+            </label>
+          </div>
+          <div class="img-card">
+            <img src="./img/card/04.jpg" />
+            <label>
+              งานหลอ
+              <span
+                >การบริการงานหลอเน้นความเชี่ยวชาญในการใช้กระบวนการและเครื่องมือที่ทันสมัย
+                เพื่อผลิตชิ้นงานที่มีคุณภาพและความแม่นยำสูง<br />
+                ให้ลูกค้าได้รับผลลัพธ์ที่ตรงตามความต้องการ</span
+              >
+            </label>
+          </div>
+          <div class="img-card">
+            <img src="./img/card/05.jpg" />
+            <label>
+              งาน CNC
+              <span
+                >การบริการงาน CNC
+                เน้นความเชี่ยวชาญในการใช้เทคโนโลยีและเครื่องมือ CNC ที่ทันสมัย
+                เพื่อผลิตชิ้นงานที่มีคุณภาพและความแม่นยำสูงให้ลูกค้าได้รับผลลัพธ์ที่ตรงตามความต้องการ</span
+              >
+            </label>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- About page -->
+    <main id="page2" class="page">
+      <article>
+        <div class="container-about">
+          <div class="image-profile">
+            <img src="./img/card/01.jpg" alt="" />
+            <div class="header-text">
+              <h1>บริษัท อัฑฒ์ เอ็นจิเนียริ่ง แอนด์ ซัพพลาย จำกัด</h1>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <div class="container-about">
+          <div class="text-about-profile clearfix">
+            <div class="text-content">
+              <div class="text-style">
+                <h2>ประวัติบริษัท</h2>
+                <p>
+                  บริษัท อัฑฒ์ เอ็นจิเนียริ่ง แอนด์ ซัพพลาย จำกัด (Aut
+                  Engineering and Supply Co., Ltd.)
+                  เป็นบริษัทที่เชี่ยวชาญในการผลิตและจำหน่ายชิ้นส่วนอะไหล่เครื่องจักรกลทุกชนิดด้วยความมุ่งมั่นที่จะให้บริการที่มีคุณภาพสูงสุดบริษัทจึงใช้เครื่องจักรที่ทันสมัยและมีความแม่นยำเพื่อให้มั่นใจว่าผลิตภัณฑ์ที่ผลิตออกมานั้นมีคุณภาพสูงและตรงตามมาตรฐานสากล
+                </p>
+                <p>
+                  ตั้งแต่ก่อตั้งขึ้น บริษัทได้พัฒนาขึ้นอย่างต่อเนื่อง
+                  ด้วยการนำเทคโนโลยีใหม่ ๆ
+                  มาใช้ในกระบวนการผลิตและการจัดหาวัสดุที่มีคุณภาพสูงเพื่อให้สามารถตอบสนองความต้องการของลูกค้าได้อย่างมีประสิทธิภาพนอกจากนี้บริษัทยังให้ความสำคัญกับการบริการหลังการขายด้วยการให้คำปรึกษาและการสนับสนุนทางเทคนิคที่ใส่ใจในความต้องการของลูกค้า
+                </p>
+              </div>
+            </div>
+            <div class="image-content">
+              <img src="./img/card/05.jpg" alt="Company Image" />
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <div class="container-service">
+          <h2>บริการของเรา</h2>
+          <div class="text-about-service">
+            <div class="card-container">
+              <div class="card">
+                <div class="header-card">
+                  <div class="icon">
+                    <i class="fa-solid fa-gears"></i>
+                  </div>
+                  <h3>ผลิตและจำหน่ายชิ้นส่วนอะไหล่</h3>
+                </div>
+                <p>
+                  บริษัทผลิตชิ้นส่วนอะไหล่เครื่องจักรกลทุกชนิด
+                  ด้วยวัสดุคุณภาพสูงและเครื่องจักรที่ทันสมัย
+                </p>
+              </div>
+              <div class="card">
+                <div class="header-card">
+                  <div class="icon">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                  </div>
+                  <h3>บริการเทคนิคและคำปรึกษา</h3>
+                </div>
+                <p>
+                  บริษัทให้บริการคำปรึกษาและการสนับสนุนทางเทคนิคที่ครอบคลุม
+                  เพื่อช่วยให้ลูกค้าสามารถใช้งานผลิตภัณฑ์ได้อย่างเต็มประสิทธิภาพ
+                </p>
+              </div>
+              <div class="card">
+                <div class="header-card">
+                  <div class="icon">
+                    <i class="fa-solid fa-circle-info"></i>
+                  </div>
+                  <h3>บริการหลังการขาย</h3>
+                </div>
+                <p>
+                  บริษัทมีทีมงานที่พร้อมให้บริการหลังการขาย
+                  เพื่อให้มั่นใจว่าลูกค้าจะได้รับการสนับสนุนที่ดีที่สุด
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <div class="container-why-us">
+          <h2>ทำไมต้องเลือกเรา</h2>
+          <div class="card-container">
+            <div class="card">
+              <div class="icon">
+                <i class="fa fa-star"></i>
+              </div>
+              <h3>คุณภาพสูง</h3>
+              <p>
+                เรามีความมุ่งมั่นที่จะให้บริการและผลิตภัณฑ์ที่มีคุณภาพสูงสุด
+                ด้วยการใช้เทคโนโลยีทันสมัย
+              </p>
+            </div>
+            <div class="card">
+              <div class="icon">
+                <i class="fa fa-info-circle"></i>
+              </div>
+              <h3>การสนับสนุนที่ยอดเยี่ยม</h3>
+              <p>
+                เรามีทีมงานที่พร้อมให้การสนับสนุนทางเทคนิคและคำปรึกษาตลอดเวลา
+              </p>
+            </div>
+            <div class="card">
+              <div class="icon">
+                <i class="fa fa-clock"></i>
+              </div>
+              <h3>ประสบการณ์ยาวนาน</h3>
+              <p>
+                เรามีประสบการณ์ในการผลิตและจำหน่ายชิ้นส่วนอะไหล่เครื่องจักรกลมาหลายปี
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <!-- Product filter page -->
+    <main id="page3" class="page">
+      <article>
+        <div class="container-product">
+          <h1>ผลิตภัณฑ์</h1>
+          <div class="card-container">
+            <a class="card" href="product.htm?type=งานเครน">
+              <img src="./img/card/01.jpg" alt="งานเครน" />
+              <div class="overlay">
+                <h3>งานเครน</h3>
+              </div>
+            </a>
+            <a class="card" href="product.htm?type=งานติดตั้ง">
+              <img src="./img/card/02.jpg" alt="งานติดตั้ง" />
+              <div class="overlay">
+                <h3>งานติดตั้ง</h3>
+              </div>
+            </a>
+            <a class="card" href="product.htm?type=งานCNC">
+              <img src="./img/card/03.jpg" alt="งานCNC" />
+              <div class="overlay">
+                <h3>งานCNC</h3>
+              </div>
+            </a>
+            <a class="card" href="product.htm?type=งานหล่อ">
+              <img src="./img/card/04.jpg" alt="งานหลอ" />
+              <div class="overlay">
+                <h3>งานหล่อ</h3>
+              </div>
+            </a>
+            <a class="card" href="product.htm?type=งานกลึง">
+              <img src="./img/card/05.jpg" alt="งานกลึง" />
+              <div class="overlay">
+                <h3>งานกลึง</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <!-- Contact page -->
+    <main id="page4" class="page">
+      <article>
+        <div class="container-contact">
+          <h2>ติดต่อกับเรา</h2>
+          <div class="contact-container">
+            <div class="contact-info">
+              <p>
+                <strong>ชื่อบริษัท:</strong> บริษัท อัฑฒ์ เอ็นจิเนียริ่ง แอนด์
+                ซัพพลาย จำกัด
+              </p>
+              <p>
+                <strong>ที่อยู่:</strong> 48/7 ถนน นนครไชยศรี แขวงถนนนครไชยศรี
+                เขตดุสิต จังหวัด กรุงเทพมหานคร 10300
+              </p>
+              <p><strong>อีเมล:</strong> auts833@gmail.com</p>
+              <p><strong>เบอร์โทร:</strong> 081-692-6298</p>
+              <p><strong>ไอดีไลน์:</strong> sales_a.us</p>
+              <img
+                src="./img/ID Line A.US.jpg"
+                alt="QR Code Line"
+                class="qrcode"
+              />
+            </div>
+            <div class="contact-form">
+              <form action="send_mail.php" method="post">
+                <label for="email">อีเมล:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="phone">เบอร์โทร:</label>
+                <input type="tel" id="phone" name="phone" required />
+
+                <label for="subject">ชื่อเรื่อง:</label>
+                <input type="text" id="subject" name="subject" required />
+
+                <label for="message">ข้อความ:</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  required
+                ></textarea>
+
+                <button type="submit">ส่งข้อความ</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <h3>ติดต่อเรา</h3>
+          <p>
+            ที่ตั้ง : 48/7 ถนน นนครไชยศรี แขวงถนนนครไชยศรี เขตดุสิต จังหวัด
+            กรุงเทพมหานคร 10300
+          </p>
+          <p>อีเมล : auts833@gmail.com</p>
+          <p>โทร : 081-692-6298</p>
+          <p>Line ID : sales_a.us</p>
+        </div>
+        <div class="footer-content footer-container-mid">
+          <h3>เวลาทำการ</h3>
+          <p>จันทร์ - ศุกร์</p>
+          <p>เวลาเปิด : 08:00</p>
+          <p>เวลาปิด : 17:00</p>
+        </div>
+        <div class="footer-content">
+          <div class="line-img">
+            <img src="./img/ID Line A.US.jpg" alt="" srcset="" />
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>บริษัท อัฑฒ์ เอ็นจิเนียริ่ง แอนด์ ซัพพลาย จำกัด &copy; 2024</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+
+<script src="./js/navbar.js"></script>
+<script src="./js/imageside.js"></script>
+<script src="./js/card.js"></script>
