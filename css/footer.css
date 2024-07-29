@@ -1,0 +1,61 @@
+footer {
+  position: relative;
+  background: rgba(254, 170, 46, 1);
+  width: 100%;
+  padding: 40px 0;
+  box-sizing: border-box;
+}
+
+footer .container {
+  display: flex;
+  flex-wrap: wrap; /* ทำให้คอนเทนเนอร์สามารถแยกแถวเมื่อพื้นที่ไม่พอ */
+  justify-content: space-between;
+  max-width: 1200px; /* ลดความกว้างสูงสุดเพื่อให้เหมาะกับหน้าจอขนาดเล็ก */
+  margin: 0 auto;
+  padding: 0 20px; /* เพิ่ม padding ด้านข้าง */
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+}
+
+footer .container .footer-content {
+  text-align: center;
+  padding: 10px;
+  flex: 1;
+  min-width: 200px; /* จำกัดความกว้างขั้นต่ำของแต่ละคอลัมน์ */
+  box-sizing: border-box;
+}
+
+footer .container .footer-content h3 {
+  color: rgb(0, 0, 0);
+  padding: 0 0 10px;
+}
+
+footer .container .footer-content.footer-container-mid p{
+  text-align: center;
+}
+
+footer .container svg {
+  padding-right: 10px;
+}
+
+.footer-content p {
+  margin: 5px 0;
+  text-align: left;
+  align-items: center;
+}
+
+.line-img img {
+  height: auto; /* ทำให้ความสูงของรูปภาพปรับตามอัตราส่วน */
+  max-height: 150px; /* จำกัดความสูงสูงสุดของรูปภาพ */
+  display: block;
+  margin: 10px auto; /* จัดกลางภาพ */
+}
+
+footer .copyright {
+  padding: 10px 20px;
+  text-align: center;
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  transform: translateY(100%);
+}
