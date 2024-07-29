@@ -24,6 +24,7 @@ header nav .logo a img {
   width: 120px;
   height: auto;
   cursor: pointer;
+  transform: translateX(-27%);
 }
 
 header nav .navlink {

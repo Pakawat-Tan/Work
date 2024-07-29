@@ -30,6 +30,10 @@ footer .container .footer-content h3 {
   padding: 0 0 10px;
 }
 
+footer .container .footer-content.footer-container-mid p{
+  text-align: center;
+}
+
 footer .container svg {
   padding-right: 10px;
 }
