@@ -5,6 +5,10 @@ main article .imgslide {
   z-index: -5000;
 }
 
+main article .imgslide .content{
+  width: 100%;
+}
+
 main article .imgslide .content .swiper-slide{
   height: 700px;
   width: 100%;
