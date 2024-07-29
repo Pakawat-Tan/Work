@@ -299,45 +299,6 @@ main article .container-service .text-about-service .card-container .card p {
   margin-bottom: 20px;
 }
 
-@media (max-width: 1220px) {
-  main article .container-about .text-about-profile {
-    flex-direction: column;
-  }
-
-  main article .container-about .text-about-profile .image-content {
-    order: 2;
-    padding: 0px;
-  }
-
-  main article .container-about .text-about-profile .text-content {
-    order: 1;
-    padding: 0px;
-  }
-
-  main article .container-about .text-about-profile .text-content .text-style {
-    font-size: 0.875rem;
-  }
-  main article .container-service {
-    padding: 40px 0px;
-  }
-
-  main article #gallery .img-card.active label {
-    width: 85%;
-  }
-}
-
-@media (max-width: 770px) {
-  main article #gallery .img-card.active label {
-    width: 80%;
-  }
-}
-
-@media (max-width: 629px) {
-  main article #gallery .img-card.active label {
-    width: 75%;
-  }
-}
-
 /* why us in about page */
 main article .container-why-us {
   display: flex;
@@ -385,6 +346,57 @@ main article .container-why-us .card-container .card p {
   color: rgb(94, 94, 94);
   font-size: 1em;
   margin: 10px 0;
+}
+
+@media (max-width: 1220px) {
+  main article .container-about .text-about-profile {
+    flex-direction: column;
+  }
+
+  main article .container-about .text-about-profile .image-content {
+    order: 2;
+    padding: 0px;
+  }
+
+  main article .container-about .text-about-profile .text-content {
+    order: 1;
+    padding: 0px;
+  }
+
+  main article .container-about .text-about-profile .text-content .text-style {
+    font-size: 0.875rem;
+  }
+  main article .container-service {
+    padding: 40px 0px;
+  }
+
+  main article #gallery .img-card.active label {
+    width: 85%;
+  }
+}
+
+@media (max-width: 770px) {
+  main article #gallery .img-card.active label {
+    width: 80%;
+  }
+}
+
+@media (max-width: 629px) {
+  main article #gallery .img-card.active label {
+    width: 75%;
+  }
+}
+
+
+@media (max-width: 400px) {
+  main article .image-about {
+    height: 200px;
+  }
+
+  main article .container-service .text-about-service .card-container .card,
+  main article .container-why-us .card-container .card {
+    width: 290px;
+  }
 }
 
 /* Product page */
@@ -447,6 +459,12 @@ main article .container-product .card-container .card:hover {
   box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
   width: 344px;
   height: 224px;
+}
+
+@media (max-width: 400px) {
+  main article .container-product .card-container {
+    width: 200%;
+  }
 }
 
 /* Contact page */
@@ -574,7 +592,7 @@ main article .container-product-list .card-container-product-list {
   width: 60%;
 }
 
-main article .container-product-list .card-container-product-list .card-list{
+main article .container-product-list .card-container-product-list .card-list {
   display: contents;
 }
 

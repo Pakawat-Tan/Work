@@ -21,16 +21,16 @@
   </head>
   <body>
     <img src="./img/background/gears.jpg" alt="" class="background" />
-    
+
     <header>
       <nav>
         <div class="logo">
-          <a onclick="showPage('page1', this)"">
+          <a onclick="showPage('page1', this, true)" href="#">
             <img src="./img/Logo.png" alt="" class="logo-icon" />
           </a>
         </div>
         <ul class="navlink">
-          <li class="nav-item active">
+          <li class="nav-item active" id="nav-home">
             <a onclick="showPage('page1', this)">หน้าแรก</a>
           </li>
           <li class="nav-item">
@@ -72,9 +72,7 @@
                 </p>
               </div>
             </div>
-            <div class="image-content">
-              
-            </div>
+            <div class="image-content"></div>
           </div>
         </div>
       </article>
@@ -134,7 +132,7 @@
     <!-- About page -->
     <main id="page2" class="page">
       <article>
-        <div class="container-about">
+        <div class="container-about image-about">
           <div class="image-profile">
             <img src="./img/card/01.jpg" alt="" />
             <div class="header-text">
@@ -311,11 +309,13 @@
               <p><strong>อีเมล:</strong> auts833@gmail.com</p>
               <p><strong>เบอร์โทร:</strong> 081-692-6298</p>
               <p><strong>ไอดีไลน์:</strong> sales_a.us</p>
-              <img
-                src="./img/ID Line A.US.jpg"
-                alt="QR Code Line"
-                class="qrcode"
-              />
+              <a href="https://line.me/ti/p/~sales_a.us">
+                <img
+                  src="./img/ID Line A.US.jpg"
+                  alt="QR Code Line"
+                  class="qrcode"
+                />
+              </a>
             </div>
             <div class="contact-form">
               <form action="send_mail.php" method="post">
@@ -376,7 +376,6 @@
     </footer>
   </body>
 </html>
-
 
 <script src="./js/navbar.js"></script>
 <script src="./js/imageside.js"></script>

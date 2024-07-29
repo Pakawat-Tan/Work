@@ -4,28 +4,48 @@ const toggleBtnIcon = document.querySelector(".toggle-btn i");
 let dropdownOpen = false;
 let closeTimeout;
 
-function showPage(pageId, element) {
-  const pages = document.querySelectorAll(".page");
-  pages.forEach((page) => {
-    page.style.display = "none";
-    page.classList.remove("active");
-  });
+function showPage(pageId, element, isLogo = false) {
+  const currentActivePageId = sessionStorage.getItem('activePage');
 
-  const selectedPage = document.getElementById(pageId);
-  selectedPage.style.display = "block";
-  selectedPage.classList.add("active");
-
-  const navItems = document.querySelectorAll("nav ul li");
-  navItems.forEach((item) => {
-    item.classList.remove("active");
-  });
-
-  if (element) {
-    element.parentElement.classList.add("active");
+  // Check if the clicked link points to the current active page
+  if (currentActivePageId === pageId) {
+    return; // If it does, do nothing
   }
 
-  sessionStorage.setItem('activePage', pageId);
+  const pages = document.querySelectorAll(".page");
+
+  pages.forEach((page) => {
+    page.style.opacity = 0;
+    setTimeout(() => {
+      page.style.display = "none";
+      page.classList.remove("active");
+    }, 500); // Match this timeout with the CSS transition duration
+  });
+
+  setTimeout(() => {
+    const selectedPage = document.getElementById(pageId);
+    selectedPage.style.display = "block";
+    setTimeout(() => {
+      selectedPage.style.opacity = 1;
+      selectedPage.classList.add("active");
+    }, 50); // Small delay to allow display change before opacity
+
+    const navItems = document.querySelectorAll("nav ul li");
+    navItems.forEach((item) => {
+      item.classList.remove("active");
+    });
+
+    if (isLogo) {
+      document.querySelector('#nav-home').classList.add('active');
+    } else if (element) {
+      element.parentElement.classList.add('active');
+    }
+
+    sessionStorage.setItem('activePage', pageId);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, 500); // Match this timeout with the CSS transition duration
 }
+
 
 function toggleDropdown(open) {
   if (open) {
@@ -48,7 +68,7 @@ toggleBtn.addEventListener('mouseover', () => {
 toggleBtn.addEventListener('mouseout', () => {
   closeTimeout = setTimeout(() => {
     toggleDropdown(false);
-  }, 5000);
+  }, 100);
 });
 
 navLinks.addEventListener('mouseover', () => {

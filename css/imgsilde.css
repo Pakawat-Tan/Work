@@ -43,3 +43,9 @@ main article .imgslide .carousel-dot .active {
   background-color: rgb(238, 141, 14);
 }
 
+@media (max-width:400px) {
+  main article .imgslide .content .swiper-slide{
+    height: 220px;
+  }
+}
+
